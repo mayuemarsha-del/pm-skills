@@ -1,0 +1,192 @@
+/* ============================================================
+   EXAMPLE design tokens (replace with your own)
+   ---
+   This is a sample tokens file. Replace the color scales, fonts,
+   spacing, radii, and shadows with your own company's design
+   system. SKILL.md inlines whatever is in this file into every
+   generated prototype's <style> block.
+
+   Required exports (so SKILL.md component snippets keep working):
+     --neutral-*, --secondary-*, --tertiary-*, --quaternary-*
+     --background, --foreground, --card, --border, --input, --accent
+     --primary, --primary-foreground
+     --success-bg, --success-fg, --warning-bg, --warning-fg,
+     --error-bg, --error-fg, --info-bg, --info-fg
+     --radius-xs/sm/md/lg/xl/full
+     --shadow-xs/sm/md/lg/xl
+     --space-1..--space-12
+     --text-xs/sm/base/lg/xl/2xl/3xl/4xl + --lh-* + --weight-*
+     --font-sans, --font-mono, --font-serif
+     --opacity-90, --ring, --muted-foreground
+   ============================================================ */
+
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=B612+Mono:wght@400;700&family=Platypi:wght@400;500;600;700&display=swap");
+
+:root {
+  /* ---------- Neutral / Primary scale (grayscale) ---------- */
+  --neutral-50:  #f5f5f6;
+  --neutral-100: #e6e6e7;
+  --neutral-200: #cfcfd2;
+  --neutral-300: #aeaeb2;
+  --neutral-400: #85868b;
+  --neutral-500: #6a6b70;
+  --neutral-600: #5b5b5f;
+  --neutral-700: #4d4d51;
+  --neutral-800: #444546;
+  --neutral-900: #3c3c3d;
+  --neutral-950: #19191a;
+
+  /* ---------- Secondary (Orange) — brand accent ---------- */
+  --secondary-50:  #fff7ed;
+  --secondary-100: #ffeed5;
+  --secondary-200: #ffd9a8;
+  --secondary-300: #ffbe72;
+  --secondary-400: #fd973a;
+  --secondary-500: #fc7913;
+  --secondary-600: #ed5d09;
+  --secondary-700: #c4450a;
+  --secondary-800: #9c3710;
+  --secondary-900: #7d2f11;
+  --secondary-950: #441606;
+
+  /* ---------- Tertiary (Purple) — AI accent ---------- */
+  --tertiary-50:  #f6f4fe;
+  --tertiary-100: #eeebfc;
+  --tertiary-200: #dfd9fb;
+  --tertiary-300: #c7bbf7;
+  --tertiary-400: #ac94f1;
+  --tertiary-500: #9168ea;
+  --tertiary-600: #8148df;
+  --tertiary-700: #7136cb;
+  --tertiary-800: #57299d;
+  --tertiary-900: #4f268c;
+  --tertiary-950: #31175e;
+
+  /* ---------- Quaternary (Teal) — supporting accent ---------- */
+  --quaternary-50:  #e7f7f7;
+  --quaternary-100: #b5f5ec;
+  --quaternary-200: #87e8de;
+  --quaternary-300: #5cdbd3;
+  --quaternary-400: #36cfc9;
+  --quaternary-500: #1ababd;
+  --quaternary-600: #0daeaf;
+  --quaternary-700: #08979c;
+  --quaternary-800: #006d75;
+  --quaternary-900: #00474f;
+  --quaternary-950: #002329;
+
+  /* ---------- Semantic (shadcn light theme mapping) ---------- */
+  --background: #ffffff;
+  --foreground: #19191a;
+  --card: #ffffff;
+  --card-foreground: #19191a;
+  --popover: #ffffff;
+  --popover-foreground: #19191a;
+  --primary: #19191a;
+  --primary-foreground: #fafafa;
+  --secondary: #f3f4f6;
+  --secondary-foreground: #364053;
+  --accent: #f3f4f6;
+  --accent-foreground: #262626;
+  --muted: #f3f4f6;
+  --muted-foreground: #4a5565;
+  --destructive: #f93939;
+  --destructive-foreground: #ffffff;
+  --border: #e5e5e5;
+  --input: #d1d5dc;
+  --ring: #6a7282;
+
+  /* ---------- Alert tokens (paired bg + fg) ---------- */
+  --success-bg: #e6ffce; --success-fg: #249f58;
+  --warning-bg: #fff2ca; --warning-fg: #b08800;
+  --error-bg:   #ffdede; --error-fg:   #e7000b;
+  --info-bg:    #dcf6ff; --info-fg:    #1a47b8;
+
+  /* ---------- Opacity overlays ---------- */
+  --opacity-90: rgba(255,255,255,0.10);
+  --opacity-80: rgba(255,255,255,0.20);
+  --opacity-50: rgba(255,255,255,0.50);
+  --opacity-30: rgba(255,255,255,0.70);
+
+  /* ---------- Gradients (sign-in / email surfaces only) ---------- */
+  --gradient-warm:   linear-gradient(135deg, #ffeed5 2%, #e0f3f7 100%);
+  --gradient-violet: linear-gradient(135deg, #ffeed5 2%, #dfd9fb 100%);
+
+  /* ---------- Typography: families ---------- */
+  --font-sans:  "PingFang SC", "Geist", "Inter", system-ui, -apple-system, sans-serif;
+  --font-cjk:   "PingFang SC", "Geist", "Inter", system-ui, sans-serif;
+  --font-serif: "Platypi", Georgia, "Times New Roman", serif;
+  --font-mono:  "B612 Mono", "Geist Mono", ui-monospace, "SF Mono", monospace;
+
+  /* ---------- Type scale ---------- */
+  --text-xs:   0.75rem;   --lh-xs:   1rem;     /* 12 / 16 */
+  --text-sm:   0.875rem;  --lh-sm:   1.25rem;  /* 14 / 20 */
+  --text-base: 1rem;      --lh-base: 1.5rem;   /* 16 / 24 */
+  --text-lg:   1.125rem;  --lh-lg:   1.75rem;
+  --text-xl:   1.25rem;   --lh-xl:   1.75rem;
+  --text-2xl:  1.5rem;    --lh-2xl:  2rem;
+  --text-3xl:  1.875rem;  --lh-3xl:  2.25rem;
+  --text-4xl:  2.25rem;   --lh-4xl:  2.5rem;
+  --text-5xl:  3rem;      --lh-5xl:  3rem;
+  --text-6xl:  3.75rem;   --lh-6xl:  3.75rem;
+  --text-7xl:  4.5rem;
+  --text-8xl:  6rem;
+  --text-9xl:  8rem;
+
+  /* weights */
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+  --weight-bold:      700;
+  --weight-extrabold: 800;
+
+  /* ---------- Spacing scale (Tailwind 4-pt) ---------- */
+  --space-1: 4px; --space-2: 8px; --space-3: 12px; --space-4: 16px;
+  --space-5: 20px; --space-6: 24px; --space-7: 28px; --space-8: 32px;
+  --space-9: 36px; --space-10: 40px; --space-11: 44px; --space-12: 48px;
+  --space-14: 56px; --space-16: 64px; --space-20: 80px;
+  --space-24: 96px; --space-28: 112px; --space-32: 128px; --space-36: 144px;
+
+  /* ---------- Radii ---------- */
+  --radius-xs:   4px;
+  --radius-sm:  12px;   /* chips */
+  --radius-md:  24px;   /* cards, buttons (Tunvo round) */
+  --radius-lg:  32px;
+  --radius-xl:  36px;
+  --radius-full: 9999px;
+
+  /* ---------- Borders ---------- */
+  --border-100: 1px;
+  --border-200: 1.33px;
+  --border-300: 2px;
+
+  /* ---------- Shadows (layered, per spec) ---------- */
+  --shadow-xs: 0 0.5px 2px 0 rgba(0,0,0,0.05);
+  --shadow-sm: 0 0.5px 2px 0 rgba(0,0,0,0.05), 0 1px 2px -1px rgba(0,0,0,0.05);
+  --shadow-md: 0 0.5px 2px 0 rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.10);
+  --shadow-lg: 0 0.5px 2px 0 rgba(0,0,0,0.05), 0 4px 6px -1px rgba(0,0,0,0.10);
+  --shadow-xl: 0 0.5px 2px 0 rgba(0,0,0,0.05), 0 8px 10px -1px rgba(0,0,0,0.10);
+}
+
+/* ============================================================
+   Semantic typography (shadcn-style hierarchy)
+   ============================================================ */
+html, body {
+  font-family: var(--font-sans);
+  color: var(--foreground);
+  background: var(--background);
+  font-size: var(--text-base);
+  line-height: var(--lh-base);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 { font-size: var(--text-4xl); line-height: var(--lh-4xl); font-weight: var(--weight-bold);     letter-spacing: -0.025em;  color: var(--foreground); }
+h2, .h2 { font-size: var(--text-3xl); line-height: var(--lh-3xl); font-weight: var(--weight-bold);     letter-spacing: -0.025em; }
+h3, .h3 { font-size: var(--text-2xl); line-height: var(--lh-2xl); font-weight: var(--weight-semibold); letter-spacing: -0.0125em; }
+h4, .h4 { font-size: var(--text-xl);  line-height: var(--lh-xl);  font-weight: var(--weight-semibold); }
+p,  .body  { font-size: var(--text-base); line-height: var(--lh-base); font-weight: var(--weight-regular); color: var(--foreground); }
+small, .small { font-size: var(--text-sm); line-height: var(--lh-sm); color: var(--muted-foreground); }
+code,  .mono  { font-family: var(--font-mono); font-size: 0.95em; }
+.lead  { font-size: var(--text-lg); line-height: var(--lh-lg); color: var(--muted-foreground); }
+.muted { color: var(--muted-foreground); }

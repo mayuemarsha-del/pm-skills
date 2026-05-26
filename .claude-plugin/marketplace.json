@@ -1,0 +1,29 @@
+{
+  "name": "pm-skills",
+  "owner": {
+    "name": "pm-skills contributors"
+  },
+  "metadata": {
+    "description": "Marketplace entry for pm-skills — product manager skill suite for Claude Code.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "pm-skills",
+      "source": "./",
+      "description": "Product manager skill suite for Claude Code — PRD writing, competitor research, daily briefing, HTML prototyping, feature acceptance, UI walkthrough.",
+      "author": {
+        "name": "pm-skills contributors"
+      },
+      "license": "MIT",
+      "keywords": [
+        "product-management",
+        "prd",
+        "requirements",
+        "competitor-research",
+        "ui-acceptance",
+        "skills"
+      ]
+    }
+  ]
+}

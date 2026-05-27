@@ -150,7 +150,7 @@
   /* ---------- Radii ---------- */
   --radius-xs:   4px;
   --radius-sm:  12px;   /* chips */
-  --radius-md:  24px;   /* cards, buttons (Tunvo round) */
+  --radius-md:  24px;   /* cards, buttons (rounded style) */
   --radius-lg:  32px;
   --radius-xl:  36px;
   --radius-full: 9999px;

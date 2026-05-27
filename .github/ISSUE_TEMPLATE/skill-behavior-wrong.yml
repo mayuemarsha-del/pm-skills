@@ -1,0 +1,47 @@
+name: "🛠️ Skill 触发了但做错了 / 做得不对"
+description: skill 被触发了，但产出 / 行为不符合预期
+labels: ["behavior-issue"]
+body:
+  - type: dropdown
+    id: skill
+    attributes:
+      label: 是哪个 skill 的问题？
+      options:
+        - prd
+        - competitor-research
+        - research-report
+        - daily-research
+        - html-prototype
+        - feature-acceptance
+        - ui-walkthrough
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: 你期望它做什么？
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: 它实际做了什么？
+      description: 贴出 Claude Code 的输出或截图最直观
+    validations:
+      required: true
+
+  - type: textarea
+    id: prompt
+    attributes:
+      label: 触发它的那句话
+      placeholder: 一字不改贴上来
+    validations:
+      required: true
+
+  - type: textarea
+    id: ideas
+    attributes:
+      label: 你的修改思路（可选）
+      placeholder: 例如：SKILL.md 第 X 节应该改成 ...

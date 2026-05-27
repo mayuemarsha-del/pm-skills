@@ -1,0 +1,41 @@
+name: "✨ 想加新 skill"
+description: 你有一段重复的 B 端 PM 工作流，觉得能抽成 skill
+labels: ["new-skill"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: 这个新 skill 应该叫什么？
+      placeholder: 例如：roadmap-planning / data-dictionary / dashboard-spec
+    validations:
+      required: true
+
+  - type: textarea
+    id: trigger
+    attributes:
+      label: 什么场景下会触发？
+      placeholder: 列出 2-5 句你会说出来调起它的话
+    validations:
+      required: true
+
+  - type: textarea
+    id: workflow
+    attributes:
+      label: 触发后 skill 应该做什么？
+      description: 按用户操作流程描述（不用写细节，先把骨架说清楚）
+    validations:
+      required: true
+
+  - type: textarea
+    id: boundary
+    attributes:
+      label: 跟现有 7 个 skill 边界怎么划？
+      description: 哪些场景该用新 skill 而不是现有的？
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: 你自己实际用过几次？
+      placeholder: 例如：我每个版本都要做 1 次，每次花 2 小时

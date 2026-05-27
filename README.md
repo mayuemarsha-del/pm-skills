@@ -7,6 +7,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-blueviolet)](https://docs.anthropic.com/claude-code)
 ![Skills](https://img.shields.io/badge/skills-7-brightgreen)
+[![GitHub stars](https://img.shields.io/github/stars/mayuemarsha-del/pm-skills?style=social)](https://github.com/mayuemarsha-del/pm-skills/stargazers)
+
+> 💡 觉得有用？点个 ⭐ Star 让更多 B 端 PM 在 GitHub 搜得到 → [给 Star](https://github.com/mayuemarsha-del/pm-skills/stargazers)
 
 <!-- 截图位 1：装上后的效果图（demo.gif 或 demo.png 放 docs/ 下） -->
 <!-- ![demo](docs/demo.gif) -->
@@ -111,9 +114,14 @@ git clone https://github.com/mayuemarsha-del/claude-browser-cap.git ~/.claude/to
 
 ## 🤝 反馈与贡献
 
-- 用着不顺手 / 触发不到 / description 写岔了 → 开 [Issue](https://github.com/mayuemarsha-del/pm-skills/issues)
-- 想加新 skill / 改进现有 skill → 欢迎 PR
+- 用着不顺手 / 触发不到 / description 写岔了 → 开 [Issue](https://github.com/mayuemarsha-del/pm-skills/issues/new/choose)（有模板，1 分钟填完）
+- 想加新 skill / 改进现有 skill → 欢迎 PR，详见 [CONTRIBUTING.md](./CONTRIBUTING.md)
 - 想分享你的 design tokens 或调研 prompt 模板给其他 PM 用 → 也可以 PR 到 `examples/` 目录
+- 不知道往哪问 → 开 [Discussion](https://github.com/mayuemarsha-del/pm-skills/discussions)
+
+## ⭐ Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=mayuemarsha-del/pm-skills&type=Date)](https://star-history.com/#mayuemarsha-del/pm-skills&Date)
 
 ## 📄 许可
 

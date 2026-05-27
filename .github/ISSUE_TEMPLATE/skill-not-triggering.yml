@@ -1,0 +1,49 @@
+name: "🎯 Skill 触发不到 / 触发错"
+description: 你说了一句话，期望某个 skill 被触发，但实际没触发或触发了别的
+labels: ["trigger-issue"]
+body:
+  - type: textarea
+    id: said
+    attributes:
+      label: 你说的那句话（一字不改贴上来）
+      placeholder: 例如："帮我改一下这段需求的字段表"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: expected
+    attributes:
+      label: 你期望触发哪个 skill？
+      options:
+        - prd
+        - competitor-research
+        - research-report
+        - daily-research
+        - html-prototype
+        - feature-acceptance
+        - ui-walkthrough
+        - 不确定 / 应该没有现有 skill 能 cover
+    validations:
+      required: true
+
+  - type: dropdown
+    id: actual
+    attributes:
+      label: 实际发生了什么？
+      options:
+        - 没触发任何 skill
+        - 触发了 prd
+        - 触发了 competitor-research
+        - 触发了 research-report
+        - 触发了 daily-research
+        - 触发了 html-prototype
+        - 触发了 feature-acceptance
+        - 触发了 ui-walkthrough
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: 当时的上下文（可选）
+      placeholder: 例如：当时已经打开了一份 PRD.md 文件 / 在某个项目目录下

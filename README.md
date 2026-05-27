@@ -1,6 +1,8 @@
 # pm-skills
 
-> 一套面向产品经理的 Claude Code skill suite。覆盖 **写需求 → 调研 → 原型 → 验收 → UI 走查** 全流程。
+> **面向 B 端产品经理**的 Claude Code skill suite。覆盖 **写需求 → 调研 → 原型 → 验收 → UI 走查** 全流程。
+>
+> 专为 SaaS / 企业服务 / 业务后台 PM 的工作流设计——长 PRD、复杂字段表、跨模块联动、配置化页面、验收清单。C 端 PM 用得到的部分有限。
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Plugin-blueviolet)](https://docs.anthropic.com/claude-code)

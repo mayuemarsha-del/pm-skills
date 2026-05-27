@@ -35,6 +35,8 @@
 /plugin install pm-skills
 ```
 
+装完不知道怎么用？看 **[5 分钟上手指南 →](./QUICKSTART.md)**
+
 **手动 clone**：
 
 ```bash
